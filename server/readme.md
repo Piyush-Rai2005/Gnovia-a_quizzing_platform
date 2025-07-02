@@ -1,3 +1,3 @@
-# Quiz app using yt and chai aur code backend
+# Quiz app
 
 This is a quiz app made using react js
