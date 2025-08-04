@@ -1,6 +1,6 @@
 import './styles/App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Login from './components/login.jsx';
+import Login from './components/Login.jsx';
 import Main from './components/Main.jsx';
 import Quiz from './components/Quiz.jsx';
 import Result from './components/Result.jsx';
