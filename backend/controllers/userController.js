@@ -2,6 +2,7 @@ import User from "../models/userSchema.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import validator from "validator";
+import LoginLog from "../models/loginLog.js"; // Import the LoginLog model
 
 // Generate JWT Token
 const createToken = (id) => {
@@ -27,6 +28,9 @@ const loginUser = async (req, res) => {
     }
 
     const token = createToken(user._id);
+    // ✅ Log the login attempt
+await LoginLog.create({ userId: user._id });
+
     res.status(200).json({
       success: true,
       token,
@@ -70,7 +74,7 @@ const registerUser = async (req, res) => {
     });
 
     const token = createToken(user._id);
-
+      await LoginLog.create({ userId: user._id });
     res.status(201).json({
       success: true,
       token,
