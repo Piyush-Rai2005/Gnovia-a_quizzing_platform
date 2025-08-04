@@ -9,11 +9,7 @@ cloudinary.config({
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
-console.log("Cloudinary ENV Loaded:", {
-  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  // api_secret intentionally not printed
-});
+
 
 /**
  * Uploads a local file to Cloudinary and deletes it locally.
