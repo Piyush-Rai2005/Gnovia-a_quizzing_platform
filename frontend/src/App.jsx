@@ -6,7 +6,7 @@ import Quiz from './components/Quiz.jsx';
 import Result from './components/Result.jsx';
 import AdminPanel from './components/Admin/AdminPanel.jsx';
 import { CheckUserExist } from './helper/helper.jsx';
-import Multi from './components/MultiPlayer/multi.jsx';
+import Multi from './components/MultiPlayer/Multi.jsx';
 import UserDashboard from './components/UserDashboard.jsx';
 
 const router = createBrowserRouter([
