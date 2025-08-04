@@ -9,6 +9,8 @@ import './styles/index.css';  // Global CSS file
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>  {/* Wrap App with Provider */}
+   <BrowserRouter>
     <App />
+   </BrowserRouter>
   </Provider>
 );
